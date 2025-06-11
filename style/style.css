@@ -1,0 +1,27 @@
+  .hover-zoom .card {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-zoom:hover .card {
+    transform: scale(1.03);
+  }
+
+.mainContainer.bg-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.mainContainer.bg-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://files.catbox.moe/nmkk40.gif');
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 9s ease-in-out;
+}
+
+.mainContainer.bg-primary:hover::before {
+  opacity: 0.4;
+}
