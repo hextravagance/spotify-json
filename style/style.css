@@ -1,21 +1,22 @@
-  .hover-zoom .card {
+  .col .card:hover,.hover-zoom .card {
     transition: transform 0.3s ease;
   }
 
-  .hover-zoom:hover .card {
-    transform: scale(1.01);
+  .col .card:hover,.hover-zoom:hover .card {
+    transform: scale(1.03);
   }
 
-.mainContainer.bg-primary {
+  .mainContainer.bg-primary {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .mainContainer.bg-primary::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('https://files.catbox.moe/nmkk40.gif');
+  background-image: url('https://files.catbox.moe/mk2mi9.gif');
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -23,5 +24,5 @@
 }
 
 .mainContainer.bg-primary:hover::before {
-  opacity: 0.4;
+  opacity: 0.3;
 }
