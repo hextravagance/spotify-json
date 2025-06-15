@@ -3,7 +3,7 @@
   }
 
   .hover-zoom:hover .card {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 
 .mainContainer.bg-primary {
